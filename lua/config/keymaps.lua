@@ -32,6 +32,7 @@ keymap.set("n", "sl", "<C-w>l")
 keymap.set("n", "sj", "<C-w>j")
 keymap.set("n", "<C-u>", ":u<Return>")
 keymap.set("n", "<C-q>", ":bdelete<Return>")
+keymap.set("n", "<leader>aa", "<cmd>%y+<CR>") -- Copy all
 -- keymap.set("n", "<C-r>", ":u<Return>");
 
 -- save files
