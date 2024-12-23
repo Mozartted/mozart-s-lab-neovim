@@ -30,9 +30,16 @@ keymap.set("n", "sh", "<C-w>h")
 keymap.set("n", "sk", "<C-w>k")
 keymap.set("n", "sl", "<C-w>l")
 keymap.set("n", "sj", "<C-w>j")
-keymap.set("n", "<C-u>", ":u<Return>")
-keymap.set("n", "<C-q>", ":bdelete<Return>")
-keymap.set("n", "<leader>aa", "<cmd>%y+<CR>") -- Copy all
+
+-- Resize splits with Alt + hjkl keys using Control + w
+keymap.set("n", "<S-Up>", "<C-w>+", { noremap = true, silent = true }) -- Resize up
+keymap.set("n", "<S-Down>", "<C-w>-", { noremap = true, silent = true }) -- Resize down
+keymap.set("n", "<S-Left>", "<C-w><", { noremap = true, silent = true }) -- Resize left
+keymap.set("n", "<S-Right>", "<C-w>>", { noremap = true, silent = true }) -- Resize right
+
+keymap.set("n", "<C-u>", ":u<Return>", { noremap = true, silent = true })
+keymap.set("n", "<C-q>", ":bdelete<Return>", { remap = true, silent = true })
+keymap.set("n", "<leader>aa", "<cmd>%y+<CR>", { remap = true, silent = true }) -- Copy all
 -- keymap.set("n", "<C-r>", ":u<Return>");
 
 -- save files

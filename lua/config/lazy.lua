@@ -27,6 +27,7 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.rust" },
     { import = "lazyvim.plugins.extras.lang.json" },
     { import = "lazyvim.plugins.extras.ui.indent-blankline" },
+    { import = "lazyvim.plugins.extras.lang.prisma" },
     -- { import = "lazyvim.plugins.extras.coding.nvim-cmp" },
     { import = "lazyvim.plugins.extras.lang.tailwind" },
     -- { import = "lazyvim.plugins.extras.coding.copilot" },
@@ -78,6 +79,9 @@ vim.opt.background = "dark"
 -- vim.cmd.colorscheme("nordic")
 -- vim.cmd.colorscheme("onedark")
 -- vim.cmd.colorscheme("oxocarbon")
-vim.cmd.colorscheme("tokyonight")
+-- vim.cmd.colorscheme("tokyonight")
+-- vim.cmd.colorscheme("tokyonight-storm")
+-- vim.cmd.colorscheme("lucario")
+vim.cmd.colorscheme("everforest")
 -- vim.cmd.colorscheme("catppuccin")
 -- vim.cmd.colorscheme("catppuccin-latte")
